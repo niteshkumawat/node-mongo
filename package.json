@@ -1,0 +1,25 @@
+{
+  "name": "mongo",
+  "version": "1.0.0",
+  "description": "This is node js code to connect to MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niteshkumawat/node-mongo.git"
+  },
+  "author": "Nitesh Kumawat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niteshkumawat/node-mongo/issues"
+  },
+  "homepage": "https://github.com/niteshkumawat/node-mongo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

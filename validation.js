@@ -11,5 +11,15 @@ const userValidation=(data)=>{
     return userValidator.validate(data);
 };
 
-module.exports.userValidation = userValidation;
 
+const LoginValidation=(data)=>{
+    const loginValidator = Joi.object({       
+        email:Joi.string().min(6).required().email(),
+        password:Joi.string().min(8).required()
+    });
+    
+    return loginValidator.validate(data);
+};
+
+module.exports.userValidation = userValidation;
+module.exports.loginValidation = LoginValidation;
